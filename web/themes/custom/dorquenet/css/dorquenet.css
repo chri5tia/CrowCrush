@@ -183,7 +183,7 @@ div.messages.messages--status,
 /* Reverse leaf shape for smaller objects */
 
 button, .button, .field--type-image,
-.menu-item, ul.tabs li, ul.menu li,
+ul.tabs li,
 ul.links.field__items li,
 #main-navigation ul.menu li,
 input.button {
@@ -194,7 +194,8 @@ input.button {
 
 /* Containers that aren't a leaf */
 
-figure.caption-img img, img {
+figure.caption-img img, img,
+.menu-item, ul.menu li {
   border-radius: 15px;
 }
 
