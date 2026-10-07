@@ -1,5 +1,6 @@
 name: Crow Crush, a DorqueNet theme
 type: theme
+base theme: dorquenet
 core_version_requirement: ^10 || ^11
 
 libraries:
