@@ -5,3 +5,4 @@ global-styles:
   css:
     theme:
       css/crowcrush.css: {}
+      css/dotsplash.css: {}

@@ -148,7 +148,7 @@ function OilPainting() {
 
     mouseTimeout = setTimeout(() => {
       // Change the color if the mouse stops moving for half a second
-      colour = getWhimsicalColor(0.20);
+      colour = getWhimsicalColor(0.05);
       console.log("Color changed to:", colour);
     }, 500); // 0.5 -second delay
 
@@ -201,7 +201,7 @@ function OilPainting() {
       );
     } else {
       // Draw a small polygon
-      var sides = Math.floor(Math.random() * 5) + 3; // Random number of sides (3-7)
+      var sides = Math.floor(Math.random() * 20) + 3; // Random number of sides (3-7)
       var angleStep = (Math.PI * 2) / sides;
       var radius = size * 100;
       for (let i = 0; i < sides; i++) {
