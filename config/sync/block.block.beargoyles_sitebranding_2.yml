@@ -1,0 +1,27 @@
+uuid: 9db345c7-81a0-4c0b-9e14-83e27600c054
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - beargoyles
+id: beargoyles_sitebranding_2
+theme: beargoyles
+region: sidebar_first
+weight: -14
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

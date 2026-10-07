@@ -1,0 +1,20 @@
+uuid: 00e78121-8f7b-4d91-9199-3e922902ca02
+langcode: en
+status: true
+dependencies:
+  theme:
+    - crowcrush
+_core:
+  default_config_hash: ng-kM_yCPtkiKiKv3JlE2F2fzheJj1LWMEEMf4VfQ7k
+id: crowcrush_local_actions
+theme: crowcrush
+region: content
+weight: -16
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

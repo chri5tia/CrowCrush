@@ -1,0 +1,34 @@
+uuid: a7a2b4c9-15e3-4377-9596-ae956c8dd2d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.admin_notes
+  module:
+    - node
+    - views
+  theme:
+    - beargoyles
+id: beargoyles_views_block__admin_notes_block_1
+theme: beargoyles
+region: sidebar_second
+weight: -17
+provider: null
+plugin: 'views_block:admin_notes-block_1'
+settings:
+  id: 'views_block:admin_notes-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      art_page: art_page
+      beargoyle_coloring_page: beargoyle_coloring_page

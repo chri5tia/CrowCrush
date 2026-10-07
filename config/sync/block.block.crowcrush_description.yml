@@ -1,0 +1,27 @@
+uuid: 9f9b453e-f6f9-48c5-bb3b-5e83cf4ebe84
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crowcrush
+id: crowcrush_description
+theme: crowcrush
+region: sidebar_first
+weight: -15
+provider: null
+plugin: 'block_content:91ee5c2e-422c-412c-8f6a-93e3854556c9'
+settings:
+  id: 'block_content:91ee5c2e-422c-412c-8f6a-93e3854556c9'
+  label: Description
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /front

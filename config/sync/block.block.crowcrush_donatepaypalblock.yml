@@ -1,0 +1,27 @@
+uuid: dba41b55-4257-4757-8a84-e8eaed4e4206
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crowcrush
+id: crowcrush_donatepaypalblock
+theme: crowcrush
+region: sidebar_second
+weight: -13
+provider: null
+plugin: 'block_content:ee588b6a-c8dc-476e-be3a-e8c1e075f46d'
+settings:
+  id: 'block_content:ee588b6a-c8dc-476e-be3a-e8c1e075f46d'
+  label: 'Donate paypal block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /donate

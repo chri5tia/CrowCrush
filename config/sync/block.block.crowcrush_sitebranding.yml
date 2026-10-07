@@ -1,0 +1,27 @@
+uuid: 85898b8e-6725-4026-ae78-da5155f04431
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crowcrush
+id: crowcrush_sitebranding
+theme: crowcrush
+region: header
+weight: -11
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

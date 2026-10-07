@@ -1,17 +1,15 @@
-uuid: 3bed0d70-d54d-4145-aa0a-a2f84a7eea2c
+uuid: 97945e51-2904-4623-ae0d-39ada0fbad29
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - dorquenet
-_core:
-  default_config_hash: 7EA9OiBOT_LIAvYf-qtAv77KjubLFa3LIcQzcYXbGrk
-id: dorquenet_branding
-theme: dorquenet
-region: footer_first
-weight: -13
+    - beargoyles
+id: beargoyles_sitebranding
+theme: beargoyles
+region: header
+weight: -11
 provider: null
 plugin: system_branding_block
 settings:
@@ -21,5 +19,9 @@ settings:
   provider: system
   use_site_logo: true
   use_site_name: false
-  use_site_slogan: false
-visibility: {  }
+  use_site_slogan: true
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

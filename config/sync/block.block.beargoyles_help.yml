@@ -1,0 +1,22 @@
+uuid: 03235ae7-145c-482c-b165-7f68233eab74
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - beargoyles
+_core:
+  default_config_hash: J0mu4I9vKBvBEsx1fY5zmoxN0tSVDlGOftdzwrn092k
+id: beargoyles_help
+theme: beargoyles
+region: content
+weight: -13
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_preview
-    - system.menu.main
   module:
     - node
     - user
@@ -432,7 +431,7 @@ display:
       display_extenders: {  }
       path: node
       menu:
-        type: normal
+        type: none
         title: Home
         description: ''
         weight: -50

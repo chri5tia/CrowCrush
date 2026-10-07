@@ -1,4 +1,4 @@
-uuid: c9c80793-be67-4c47-a8e1-7db46265e1e3
+uuid: e947f64e-9aeb-4f71-9db1-7a392ea23657
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - dorquenet
+    - beargoyles
 _core:
   default_config_hash: d99DFYwcsS3T3yOmWYYtVUK_s55wP-HnegXe0GvtsBs
-id: dorquenet_footer
-theme: dorquenet
+id: beargoyles_footer
+theme: beargoyles
 region: footer
 weight: -10
 provider: null

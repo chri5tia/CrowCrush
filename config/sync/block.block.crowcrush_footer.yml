@@ -1,4 +1,4 @@
-uuid: c9c80793-be67-4c47-a8e1-7db46265e1e3
+uuid: 6740f004-2152-4d73-8cfc-a6fc00f23877
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - system
   theme:
-    - dorquenet
+    - crowcrush
 _core:
   default_config_hash: d99DFYwcsS3T3yOmWYYtVUK_s55wP-HnegXe0GvtsBs
-id: dorquenet_footer
-theme: dorquenet
+id: crowcrush_footer
+theme: crowcrush
 region: footer
 weight: -10
 provider: null

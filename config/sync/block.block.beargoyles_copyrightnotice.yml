@@ -1,4 +1,4 @@
-uuid: c983c0c0-bd2c-4450-93a9-ceabf2eccacd
+uuid: 99d7a9dd-d689-4fed-bfee-814f1e769c2d
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - dorquenet
-id: dorquenet_copyrightnotice
-theme: dorquenet
+    - beargoyles
+id: beargoyles_copyrightnotice
+theme: beargoyles
 region: footer
 weight: -11
 provider: null

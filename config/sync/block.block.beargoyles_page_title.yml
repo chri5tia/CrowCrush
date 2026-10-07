@@ -1,0 +1,26 @@
+uuid: 76813c95-079f-448e-a806-f20baf302bfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - beargoyles
+_core:
+  default_config_hash: a_ewKQxu8obIPnNMIOBV6iFGLMm334WARDJJb3Hlv6w
+id: beargoyles_page_title
+theme: beargoyles
+region: content
+weight: -15
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /front

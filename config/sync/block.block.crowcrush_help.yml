@@ -1,0 +1,22 @@
+uuid: 6269b643-f0ea-4fec-99b5-22bf2f0857ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - crowcrush
+_core:
+  default_config_hash: J0mu4I9vKBvBEsx1fY5zmoxN0tSVDlGOftdzwrn092k
+id: crowcrush_help
+theme: crowcrush
+region: content
+weight: -13
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

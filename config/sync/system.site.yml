@@ -2,13 +2,13 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
 uuid: 189a2e33-a306-4487-8009-d4a14a3f2152
-name: 'DorqueNet Fresh Project'
-mail: christiahall@gmail.com
-slogan: 'A fresh site to get started on a new project'
+name: 'Crow Crush'
+mail: wbsite@crowcrush.com
+slogan: 'Art Series by Jalin Malin'
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/3
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

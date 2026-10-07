@@ -1,4 +1,4 @@
-uuid: c983c0c0-bd2c-4450-93a9-ceabf2eccacd
+uuid: dd701553-378b-4694-a4c7-2cd6177040cb
 langcode: en
 status: true
 dependencies:
@@ -7,9 +7,9 @@ dependencies:
   module:
     - block_content
   theme:
-    - dorquenet
-id: dorquenet_copyrightnotice
-theme: dorquenet
+    - crowcrush
+id: crowcrush_copyrightnotice
+theme: crowcrush
 region: footer
 weight: -11
 provider: null

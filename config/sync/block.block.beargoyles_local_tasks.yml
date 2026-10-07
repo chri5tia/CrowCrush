@@ -1,0 +1,22 @@
+uuid: 021b3f72-f754-43e8-8f7f-ba89c21bf499
+langcode: en
+status: true
+dependencies:
+  theme:
+    - beargoyles
+_core:
+  default_config_hash: nn1Lk6mCvPylf1Me1COvig7AfIgavwQ101ON6ojvfkA
+id: beargoyles_local_tasks
+theme: beargoyles
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

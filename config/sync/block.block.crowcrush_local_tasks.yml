@@ -1,0 +1,22 @@
+uuid: ea24f984-9761-4bc4-afa7-cef65b21bbe1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - crowcrush
+_core:
+  default_config_hash: nn1Lk6mCvPylf1Me1COvig7AfIgavwQ101ON6ojvfkA
+id: crowcrush_local_tasks
+theme: crowcrush
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
