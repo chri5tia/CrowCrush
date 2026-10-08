@@ -1121,7 +1121,7 @@ display:
         type: normal
         title: 'Better Content View'
         description: 'Table of artwork and pages'
-        weight: -86
+        weight: -90
         expanded: true
         menu_name: admin
         parent: system.admin_content

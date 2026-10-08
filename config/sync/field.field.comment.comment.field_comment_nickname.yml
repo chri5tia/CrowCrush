@@ -9,13 +9,11 @@ id: comment.comment.field_comment_nickname
 field_name: field_comment_nickname
 entity_type: comment
 bundle: comment
-label: Nickname
+label: 'Your Name (real or fake)'
 description: ''
 required: true
 translatable: false
-default_value:
-  -
-    value: 'Anonymous Fan'
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: string

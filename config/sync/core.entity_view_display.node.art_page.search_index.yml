@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.art_page.field_comments
     - field.field.node.art_page.field_metatags
     - field.field.node.art_page.field_preview
+    - field.field.node.art_page.field_subtitle
     - field.field.node.art_page.field_tags
     - node.type.art_page
   module:
@@ -39,4 +40,5 @@ hidden:
   field_admin_tags: true
   field_comments: true
   field_metatags: true
+  field_subtitle: true
   field_tags: true

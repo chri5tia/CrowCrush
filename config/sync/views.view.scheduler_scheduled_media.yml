@@ -1039,6 +1039,7 @@ display:
         title: 'Scheduled Media'
         description: 'Media items that are scheduled for publishing or unpublishing'
         weight: -84
+        enabled: false
         expanded: false
         menu_name: admin
         parent: system.admin_content

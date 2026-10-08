@@ -85,7 +85,7 @@
       {% if display_submitted %}
         <div class="meta submitted">
           {{ author_picture }}
-          {{ date }}
+          {{ node.created.value|format_date('custom_short_date') }}
         </div>
       {% endif %}
     </header>
