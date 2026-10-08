@@ -1,0 +1,32 @@
+uuid: ea5a1d21-77fa-4278-8db2-194f0eda341a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.image_only
+    - field.field.node.page.body
+    - field.field.node.page.field_preview
+    - node.type.page
+  module:
+    - user
+id: node.page.image_only
+targetEntityType: node
+bundle: page
+mode: image_only
+content:
+  field_preview:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true

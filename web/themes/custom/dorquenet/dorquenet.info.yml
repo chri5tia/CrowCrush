@@ -1,6 +1,6 @@
 name: DorqueNet
 type: theme
-description: This is a dorquenet sub theme of bootstrap_business
+description: Dorquenet project sub theme of bootstrap_business
 core: 8.x
 core_version_requirement: ^8 || ^9 || ^10
 # Defines the base theme
@@ -12,6 +12,7 @@ libraries:
 
 libraries-override:
    bootstrap_business/bootstrap: false
+
 # Regions
 regions:
     pre_header_first: 'Pre Header First'
