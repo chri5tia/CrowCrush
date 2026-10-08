@@ -2,6 +2,17 @@
 Style guide:
 */
 
+p {
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+p.footer {
+    font-size: medium;
+    letter-spacing: .08em;
+}
+
+/* Hide text help on comment form */
 figure.caption-img img, img,
 .menu-item, ul.menu li {
   border-radius: 15px;
