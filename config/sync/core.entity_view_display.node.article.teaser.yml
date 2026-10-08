@@ -6,12 +6,12 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_image
+    - field.field.node.article.field_preview
     - field.field.node.article.field_tags
-    - image.style.medium
+    - image.style.large
     - node.type.article
   module:
-    - image
+    - media
     - text
     - user
 _core:
@@ -29,16 +29,16 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_image:
-    type: image
+  field_preview:
+    type: media_thumbnail
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: large
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   field_tags:
     type: entity_reference_label

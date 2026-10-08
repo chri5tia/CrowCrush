@@ -6,13 +6,13 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
-    - field.field.node.article.field_image
+    - field.field.node.article.field_preview
     - field.field.node.article.field_tags
-    - image.style.wide
+    - image.style.large
     - node.type.article
   module:
     - comment
-    - image
+    - photoswipe
     - text
     - user
 _core:
@@ -38,20 +38,25 @@ content:
     third_party_settings: {  }
     weight: 110
     region: content
-  field_image:
-    type: image
+  field_preview:
+    type: photoswipe_field_formatter
     label: hidden
     settings:
-      image_link: ''
-      image_style: wide
+      photoswipe_thumbnail_style_first: ''
+      photoswipe_thumbnail_style: large
+      photoswipe_image_style: ''
+      photoswipe_reference_image_field: field_media_image
+      photoswipe_view_mode: default
+      photoswipe_remove_gallery_wrapper_class: false
+      photoswipe_show_download_button: false
       image_loading:
-        attribute: eager
+        attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   field_tags:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
