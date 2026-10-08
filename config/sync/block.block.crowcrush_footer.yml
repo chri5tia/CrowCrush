@@ -1,4 +1,4 @@
-uuid: 6740f004-2152-4d73-8cfc-a6fc00f23877
+uuid: 58fd4493-9f49-407b-8be2-c28e06a99b5c
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: crowcrush_footer
 theme: crowcrush
 region: footer
-weight: -10
+weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

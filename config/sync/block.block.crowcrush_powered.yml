@@ -1,0 +1,22 @@
+uuid: 1de2f901-4b7c-4e1c-831c-c56ac3996782
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crowcrush
+_core:
+  default_config_hash: GQvIc8srH52Zmpr55kCchZS6_9ovbd-_szU6RJ2BvIg
+id: crowcrush_powered
+theme: crowcrush
+region: footer_first
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

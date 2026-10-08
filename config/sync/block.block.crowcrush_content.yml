@@ -1,4 +1,4 @@
-uuid: 30464359-d463-4540-8a73-dfb8eee46309
+uuid: f7fecf42-c2b3-4e2c-8db9-de06fa3713d0
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: crowcrush_content
 theme: crowcrush
 region: content
-weight: -12
+weight: -1
 provider: null
 plugin: system_main_block
 settings:

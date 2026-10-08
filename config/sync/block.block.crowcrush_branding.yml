@@ -1,15 +1,17 @@
-uuid: 97945e51-2904-4623-ae0d-39ada0fbad29
+uuid: 1437d988-5a19-4b75-ad08-51f53138f566
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - beargoyles
-id: beargoyles_sitebranding
-theme: beargoyles
+    - crowcrush
+_core:
+  default_config_hash: 7EA9OiBOT_LIAvYf-qtAv77KjubLFa3LIcQzcYXbGrk
+id: crowcrush_branding
+theme: crowcrush
 region: header
-weight: -11
+weight: 0
 provider: null
 plugin: system_branding_block
 settings:
@@ -18,10 +20,6 @@ settings:
   label_display: '0'
   provider: system
   use_site_logo: true
-  use_site_name: false
+  use_site_name: true
   use_site_slogan: true
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }
