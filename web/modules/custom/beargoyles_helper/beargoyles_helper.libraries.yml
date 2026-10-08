@@ -1,4 +1,4 @@
 admin:
   css:
     theme:
-      css/beargoyles-helper.admin.css: {}
+      css/crowcrush-helper.admin.css: {}
