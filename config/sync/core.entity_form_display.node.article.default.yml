@@ -32,13 +32,13 @@ content:
     third_party_settings: {  }
   comment:
     type: comment_default
-    weight: 20
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -61,27 +61,27 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 15
+    weight: 5
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 120
+    weight: 10
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
+    weight: 6
     region: content
     settings:
       display_label: true
@@ -94,21 +94,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   url_redirects:
-    weight: 50
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   publish_on: true
+  uid: true
   unpublish_on: true

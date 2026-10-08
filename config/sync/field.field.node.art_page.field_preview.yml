@@ -10,7 +10,7 @@ id: node.art_page.field_preview
 field_name: field_preview
 entity_type: node
 bundle: art_page
-label: Preview
+label: Image
 description: ''
 required: false
 translatable: false
