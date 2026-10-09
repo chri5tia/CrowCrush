@@ -10,6 +10,12 @@ p {
     line-height: 1.5;
 }
 
+h1, #site-name a {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
 p.footer {
     font-size: medium;
     letter-spacing: .08em;
@@ -21,7 +27,7 @@ textarea.form-textarea, select, div.meta.submitted {
 }
 
 .field.field--name-field-subtitle.field--type-string.field--label-hidden.field__item {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #CC3366;
     font-style: italic;
 }

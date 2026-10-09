@@ -33,11 +33,11 @@ textarea#edit-comment-body-0-value {
 }
 
 /* Dashed */
-.node--view-mode-teaser,
+/* .node--view-mode-teaser,
 .path-node #content-wrapper,
 ol.search-results.node_search-results {
   border-style: dashed;
-}
+} */
 
 /* BORDER THICKNESS */
 
@@ -73,15 +73,15 @@ select#selector,
 }
 
 /* Thick border */
-.node--view-mode-teaser,
+/* .node--view-mode-teaser,
 .node--view-mode-search-index,
 ol.search-results.node_search-results,
 .path-node #content-wrapper {
   border-width: 3px;
-}
+} */
 
 /* Medium border */
-.comment,
+/* .comment,
 input#edit-captcha-response,
 input#edit-keys,
 input#edit-keys--2,
@@ -89,21 +89,21 @@ input#edit-mail,
 input#edit-name,
 input#edit-pass {
   border-width: 2px;
-}
+} */
 
 
 /* Thick bottom border */
-.region-sidebar-second ul.menu li {
+/* .region-sidebar-second ul.menu li {
   border-bottom: 3px;
-}
+} */
 
 /* CORNERS/BORDER RADIUS */
 
 /* Border radius 0 */
-.image-style-gallery-photo,
+/* .image-style-gallery-photo,
 .image-style-gallery-thumb {
   border-radius: 0;
-}
+} */
 
 /* Border radius 6px */
 .breadcrumb {
@@ -142,12 +142,12 @@ ul.tabs li,
 ul.tabs.primary,
 #main-navigation ul.menu li,
 .block,
-.block-beargoyles-local-tasks,
-.block-beargoyles-page-title,
+.block-crowcrush-local-tasks,
+.block-crowcrush-page-title,
 .button,
 .captcha,
 .clearfix.text-formatted.field.field--name-description.field--type-text-long.field--label-hidden.field__item p,
-.field--name-field-beargoyle-tags .field__item,
+.field--name-field-tags .field__item,
 .field--type-image,
 .field--type-text-with-summary,
 .field-item:hover,
@@ -193,7 +193,7 @@ div.messages.messages {
 }
 
 /* Block leaf */
-div#site-name,
+/* div#site-name,
 div#site-slogan,
 div.messages.messages--status,
 h1.page-title,
@@ -203,10 +203,10 @@ ol.search-results.node_search-results,
 textarea.form-textarea,
 ul.tabs.primary,
 .block,
-.block-beargoyles-local-tasks,
-.block-beargoyles-page-title,
+.block-crowcrush-local-tasks,
+.block-crowcrush-page-title,
 .clearfix.text-formatted.field.field--name-description.field--type-text-long.field--label-hidden.field__item p,
-.field--name-field-beargoyle-tags .field__item,
+.field--name-field-tags .field__item,
 .field--type-text-with-summary,
 .field-item:hover,
 .item-list ul li,
@@ -216,11 +216,11 @@ ul.tabs.primary,
 .path-node #content-wrapper {
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
-}
+} */
 
 
-/* Leaf parts idfk border top right radius 100 */
-.captcha,
+/* Leaf parts border top right radius 100 */
+/* .captcha,
 .sideleaf {
   border-top-right-radius: 100px;
-}
+} */

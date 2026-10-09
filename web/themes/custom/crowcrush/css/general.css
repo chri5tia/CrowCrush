@@ -1,5 +1,5 @@
 /*
- * General markup and styling for beargoyles.com
+ * General markup and styling for crowcrush.com
  * Colors are defined in colors.css
  * Borders are defined in borders.css
  * Anything related to the background splash paint affect in splash.css
@@ -9,7 +9,6 @@
 
 /* Google font import */
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Gwendolyn&family=Montserrat:wght@300&family=Nunito:wght@300;400&family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Fonts, weight and style */
@@ -146,7 +145,7 @@ ol.search-results.node_search-results {
 }
 
 /* Tags */
-.field--name-field-beargoyle-tags .field__item {
+.field--name-field-tags .field__item {
   float:right;
   padding: 0 10px;
   text-transform: uppercase;
@@ -155,16 +154,12 @@ ol.search-results.node_search-results {
   line-height:150%;
 }
 
-.node--view-mode-full .field--name-field-beargoyle-tags .field__item {
+.node--view-mode-full .field--name-field-tags .field__item {
   font-size: large;
 }
 
-.field--name-field-beargoyle-tags .field__item a:hover {
+.field--name-field-tags .field__item a:hover {
   text-decoration:none;
-}
-
-h1.page-title {
-  font-size: 72px;
 }
 
 #desc-label {
@@ -224,7 +219,7 @@ img.image-style-large-white-circle {
 
 /* Blocks */
 
-div#block-branding-beargoyles {
+div#block-branding-crowcrush {
   opacity: 85%;
   z-index: 100;
   position: relative;
@@ -297,12 +292,6 @@ b, em, strong {
 div#site-slogan {
   font-size: 24px;
   font-style: italic;
-}
-
-h1, #site-name a {
-  font-family: "Londrina Outline", serif;
-  font-weight: 800;
-  font-style: normal;
 }
 
 #site-name a {

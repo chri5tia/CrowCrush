@@ -15,7 +15,7 @@ textarea#edit-message-0-value {
 
 /* Background color */
 a#logo img,
-div#block-branding-beargoyles,
+div#block-branding-crowcrush,
 div#site-name,
 div#site-slogan,
 h1.page-title,
@@ -29,8 +29,8 @@ ol.search-results.node_search-results,
 ul.menu li,
 ul.tabs li a:hover,
 ul.tabs.primary,
-.block-beargoyles-local-tasks,
-.block-beargoyles-page-title,
+.block-crowcrush-local-tasks,
+.block-crowcrush-page-title,
 .captcha,
 .item-list ul li,
 .roundcorner,
@@ -156,7 +156,7 @@ input[type="submit"]:hover,
 }
 
 /* DARK PURPLE */
-.field--name-field-beargoyle-tags .field__item a:hover {
+.field--name-field-tags .field__item a:hover {
   color: #30054a;
 }
 

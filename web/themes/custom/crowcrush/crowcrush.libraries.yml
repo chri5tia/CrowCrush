@@ -8,8 +8,8 @@ global-styles:
       css/colors.css: {}
       css/general.css: {}
       css/paypal.css: {}
-      css/splash.css: {}
       css/themeoverride.css: {}
       css/chatbox.css: {}
       css/dotsplash.css: {}
       css/crowcrush.css: {}
+
