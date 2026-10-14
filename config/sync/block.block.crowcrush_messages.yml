@@ -1,4 +1,4 @@
-uuid: acfc04cb-51c2-4576-8eda-b2df2160b773
+uuid: 6e938aa5-724a-4282-bf13-41c42529066f
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: crowcrush_messages
 theme: crowcrush
 region: content
-weight: -17
+weight: -6
 provider: null
 plugin: system_messages_block
 settings:

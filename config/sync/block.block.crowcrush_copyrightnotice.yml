@@ -1,4 +1,4 @@
-uuid: dd701553-378b-4694-a4c7-2cd6177040cb
+uuid: 4e6bb3b7-4902-436d-91dd-7dd964703695
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 id: crowcrush_copyrightnotice
 theme: crowcrush
 region: footer
-weight: -11
+weight: 0
 provider: null
 plugin: 'block_content:a4ec1385-9b80-41b6-b65c-eb52df9ab6e0'
 settings:

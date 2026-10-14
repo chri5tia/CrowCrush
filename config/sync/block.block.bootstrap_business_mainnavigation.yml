@@ -1,4 +1,4 @@
-uuid: 82eab0a3-d080-4181-b47f-b66fc5c2e817
+uuid: be63cd9f-11c0-4588-9fb7-c8bb11aafb69
 langcode: en
 status: true
 dependencies:
@@ -8,12 +8,10 @@ dependencies:
     - system
   theme:
     - bootstrap_business
-_core:
-  default_config_hash: lHV5hXq2bIlb2FOZyNnc5F-c103EDJkMOPXP1uy8FNs
-id: bootstrap_business_main_menu
+id: bootstrap_business_mainnavigation
 theme: bootstrap_business
 region: navigation
-weight: -6
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -22,6 +20,6 @@ settings:
   label_display: '0'
   provider: system
   level: 1
-  depth: 1
+  depth: 0
   expand_all_items: false
 visibility: {  }

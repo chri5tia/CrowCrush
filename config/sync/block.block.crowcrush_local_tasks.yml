@@ -1,4 +1,4 @@
-uuid: ea24f984-9761-4bc4-afa7-cef65b21bbe1
+uuid: f1638298-b215-4de4-80e1-fe53272d9846
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: crowcrush_local_tasks
 theme: crowcrush
 region: content
-weight: -14
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

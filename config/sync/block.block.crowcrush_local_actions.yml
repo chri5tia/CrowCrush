@@ -1,4 +1,4 @@
-uuid: 00e78121-8f7b-4d91-9199-3e922902ca02
+uuid: 5474ffa8-604e-4b86-8405-81ee355d0882
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: crowcrush_local_actions
 theme: crowcrush
 region: content
-weight: -16
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

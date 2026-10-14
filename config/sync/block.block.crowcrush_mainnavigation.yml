@@ -1,4 +1,4 @@
-uuid: eca3de70-d966-4a83-941b-d73e7765cbcb
+uuid: f31e062a-c703-4d14-8774-a219cf63ee10
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - crowcrush
 id: crowcrush_mainnavigation
 theme: crowcrush
-region: primary_menu
+region: navigation
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
