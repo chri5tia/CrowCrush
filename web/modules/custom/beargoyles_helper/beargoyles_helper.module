@@ -5,7 +5,7 @@ use Drupal\Core\Form\FormStateInterface;
 /**
  * Implements hook_form_taxonomy_term_form_alter().
  */
-function beargoyles_helper_form_taxonomy_term_form_alter(
+function crowcrush_helper_form_taxonomy_term_form_alter(
   array &$form,
   FormStateInterface $form_state,
 ): void {
@@ -19,18 +19,18 @@ function beargoyles_helper_form_taxonomy_term_form_alter(
   }
 
   $form['relations']['parent']['#element_validate'][] =
-    'beargoyles_helper_parent_validate';
+    'crowcrush_helper_parent_validate';
 
   $form['relations']['parent']['#attributes']['class'][] =
-    'beargoyles-parent-options';
+    'crowcrush-parent-options';
 
-  $form['#attached']['library'][] = 'beargoyles_helper/admin';
+  $form['#attached']['library'][] = 'crowcrush_helper/admin';
 }
 
 /**
  * Converts the radio value to the array taxonomy expects.
  */
-function beargoyles_helper_parent_validate(
+function crowcrush_helper_parent_validate(
   array &$element,
   FormStateInterface $form_state,
   array &$complete_form,
@@ -43,7 +43,7 @@ function beargoyles_helper_parent_validate(
 /**
  * Implements hook_page_attachments_alter().
  */
-function beargoyles_helper_page_attachments_alter(array &$attachments): void {
+function crowcrush_helper_page_attachments_alter(array &$attachments): void {
   $request = \Drupal::request();
 
   if ($request->query->has('page')) {
@@ -55,7 +55,7 @@ function beargoyles_helper_page_attachments_alter(array &$attachments): void {
           'content' => 'noindex, follow',
         ],
       ],
-      'beargoyles_pager_noindex',
+      'crowcrush_pager_noindex',
     ];
   }
 }

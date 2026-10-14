@@ -1,10 +1,17 @@
-name: Crow Crush, a DorqueNet theme
+name: Crow Crush Theme
 type: theme
-base theme: dorquenet
-core_version_requirement: ^10 || ^11
-
+description: Crow Crush is a sub theme of bootstrap business
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+# Defines the base theme
+base theme: bootstrap_business
+# Defines libraries group in which we can add css/js.
 libraries:
-  - newsite/global
+ - crowcrush/global-scripts
+ - crowcrush/global-styles
+
+Libraries-override:
+   bootstrap_business/bootstrap: false
 
 # Regions
 regions:

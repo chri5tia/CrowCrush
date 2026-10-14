@@ -26,15 +26,15 @@
     <p class="visually-hidden">{{ parent }}</p>
   {% endif %}
 
-  <div class="beargoyles-comment">
-    <div class="beargoyles-comment__meta">
+  <div class="crowcrush-comment">
+    <div class="crowcrush-comment__meta">
       <strong>
         {{ comment.field_comment_nickname.value ?: 'Anonymous Fan' }}
       </strong>
       <span>· {{ posted_ago }} ago</span>
     </div>
 
-    <div{{ content_attributes.addClass('beargoyles-comment__body') }}>
+    <div{{ content_attributes.addClass('crowcrush-comment__body') }}>
       {{ content|without('links', 'field_comment_nickname') }}
     </div>
   </div>
