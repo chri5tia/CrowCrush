@@ -9,7 +9,7 @@ function crowcrush_preprocess_node__article(array &$variables): void {
   $date = $variables['node']->getCreatedTime();
 
   $variables['date'] = \Drupal::service('date.formatter')
-    ->format($date, 'dorquenet_medium');
+    ->format($date, 'custom_short_date');
 }
 
 /**

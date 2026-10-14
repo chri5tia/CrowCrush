@@ -4,12 +4,7 @@ global-scripts:
 global-styles:
   css:
     theme:
-      css/borders.css: {}
-      css/colors.css: {}
-      css/general.css: {}
-      css/paypal.css: {}
-      css/themeoverride.css: {}
-      css/chatbox.css: {}
+      css/beargoyles.css: {}
       css/dotsplash.css: {}
       css/crowcrush.css: {}
 
