@@ -527,8 +527,8 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'Next Beargoyle ››'
-            previous: '‹‹ Last Beargoyle'
+            next: 'Next ››'
+            previous: '‹‹ Last'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
