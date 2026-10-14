@@ -1,0 +1,5 @@
+name: Crow Crush Helper Module
+type: module
+description: 'Custom functionality and form alterations for Crow Crush.'
+package: Custom
+core_version_requirement: ^10
