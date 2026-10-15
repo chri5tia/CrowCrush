@@ -32,13 +32,6 @@ textarea#edit-comment-body-0-value {
   border-top-style: solid;
 }
 
-/* Dashed */
-/* .node--view-mode-teaser,
-.path-node #content-wrapper,
-ol.search-results.node_search-results {
-  border-style: dashed;
-} */
-
 /* BORDER THICKNESS */
 
 /* No border */
@@ -72,46 +65,6 @@ select#selector,
   border-top-width: 1px;
 }
 
-/* Thick border */
-/* .node--view-mode-teaser,
-.node--view-mode-search-index,
-ol.search-results.node_search-results,
-.path-node #content-wrapper {
-  border-width: 3px;
-} */
-
-/* Medium border */
-/* .comment,
-input#edit-captcha-response,
-input#edit-keys,
-input#edit-keys--2,
-input#edit-mail,
-input#edit-name,
-input#edit-pass {
-  border-width: 2px;
-} */
-
-
-/* Thick bottom border */
-/* .region-sidebar-second ul.menu li {
-  border-bottom: 3px;
-} */
-
-/* CORNERS/BORDER RADIUS */
-
-/* Border radius 0 */
-/* .image-style-gallery-photo,
-.image-style-gallery-thumb {
-  border-radius: 0;
-} */
-
-/* Border radius 6px */
-.breadcrumb {
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  margin: 0;
-}
 
 /* Border radius 15px */
 button,
@@ -169,27 +122,12 @@ div.messages.messages--status {
 }
 
 
-/* Border radius 50px */
 
-a#logo img, img.image-style-thumbnail {
-  border-radius: 50px;
-}
-
-/* Medium circle */
-img.image-style-medium {
-  border-radius: 120px;
-}
-
-/* Large circle */
-img.image-style-large-white-circle {
-  border-radius:150px;
-}
 
 /* Top content leaf */
 div.messages.messages {
   margin-right:0;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 150px;
+  border-radius: 15px;
 }
 
 /* Block leaf */
@@ -311,7 +249,7 @@ textarea#edit-message-0-value,
   border-color: #333333;
 }
 
-/* PURPLE */
+/* PURPLE -> red #CC3366 */
 a,
 a:hover,
 a:focus,
@@ -333,10 +271,10 @@ ul.menu li a:hover,
 #block-node-recent .node-title,
 #region-sidebar-second ul.menu li,
 #forum thead a:hover {
-  color: #51387e;
+  color: #CC3366;
 }
 
-/* LIGHT PURPLE */
+/* LIGHT PURPLE -> yellow */
 a:focus,
 a:hover,
 #block-node-recent .node-title a:hover,
@@ -345,7 +283,7 @@ ul.links li a.active,
 ul.links li a:hover,
 ul.menu li a.active,
 ul.menu li a:hover {
-  color: #846baf;
+  color: #d4be42;
 }
 
 /* Border color */
@@ -365,7 +303,7 @@ textarea.form-textarea:focus,
 .tag a:hover,
 ::-moz-selection,
 ::selection {
-  border-color: #846baf;
+  border-color: #d4be42;
 }
 
 /* Background color */
@@ -379,12 +317,12 @@ input[type="submit"]:hover,
 .tag a:hover,
 ::-moz-selection,
 ::selection {
-  background-color: #846baf;
+  background-color: #d4be42;
 }
 
 /* DARK PURPLE */
 .field--name-field-tags .field__item a:hover {
-  color: #30054a;
+  color: #3b8272;
 }
 
 /* SILVER */

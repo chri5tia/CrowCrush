@@ -21,30 +21,10 @@ ul.tabs li {
 }
 
 #main-navigation,
-/*#block-dorquenet-page-title, */
+block-crowcrush-page-title,
 .menu-item, ul.menu, #main-content .col-md-8 {
   opacity: 95%;
 }
-
-/* Z-indexing */
-
-/*
-button, img, input, label,
-.node, ul.tabs, ul.menu,
-.views-row, .button,
-#block-dorquenet-page-title,
-.block-page-title-block,
-.block-local-tasks-block,
-.menu-item,
-.block-system-menu-block,
-.node--type-page,
-.block-system-main-block .node,
-.block-system-breadcrumb-block .content,
-ul.tabs li, .col-md-8 {
-z-index: 100;
-position:relative;
-}
-*/
 
 button, img, input, label,
 .node, ul.tabs, ul.menu, .button,
