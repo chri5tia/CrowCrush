@@ -1,6 +1,6 @@
 uuid: 7e566f6e-ac97-4245-a158-3c86d6f686c5
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -12,7 +12,7 @@ _core:
   default_config_hash: dWThK9obuv2HidRYuX-ouETy3DQj-duHrsgqdQUyoKc
 id: crowcrush_tools
 theme: crowcrush
-region: slideout
+region: pre_header_first
 weight: -23
 provider: null
 plugin: 'system_menu_block:tools'
