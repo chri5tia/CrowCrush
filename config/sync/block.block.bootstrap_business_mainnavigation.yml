@@ -1,0 +1,25 @@
+uuid: be63cd9f-11c0-4588-9fb7-c8bb11aafb69
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootstrap_business
+id: bootstrap_business_mainnavigation
+theme: bootstrap_business
+region: navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

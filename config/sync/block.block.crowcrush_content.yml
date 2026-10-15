@@ -1,0 +1,22 @@
+uuid: f7fecf42-c2b3-4e2c-8db9-de06fa3713d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crowcrush
+_core:
+  default_config_hash: Fuvo_V2eVvIP87aTfCPvxZp6d5ggdIwcWaPSVVRKsa8
+id: crowcrush_content
+theme: crowcrush
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

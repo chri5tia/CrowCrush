@@ -1,0 +1,33 @@
+uuid: 336f4205-3d0e-42ca-9a0b-22edc3eeb7ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_comments
+    - node.type.art_page
+  module:
+    - comment
+id: node.art_page.field_comments
+field_name: field_comments
+entity_type: node
+bundle: art_page
+label: Comments
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 0
+  per_page: 5
+  anonymous: 0
+  form_location: true
+  preview: 0
+field_type: comment

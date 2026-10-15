@@ -1,0 +1,27 @@
+uuid: 58fd4493-9f49-407b-8be2-c28e06a99b5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - crowcrush
+_core:
+  default_config_hash: d99DFYwcsS3T3yOmWYYtVUK_s55wP-HnegXe0GvtsBs
+id: crowcrush_footer
+theme: crowcrush
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

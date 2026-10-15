@@ -1,0 +1,22 @@
+uuid: 6e938aa5-724a-4282-bf13-41c42529066f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - crowcrush
+_core:
+  default_config_hash: CybDyQJYsoDmybEofydWzBFuy_w-SZ2YjEE-Llw2jMo
+id: crowcrush_messages
+theme: crowcrush
+region: content
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

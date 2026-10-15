@@ -1,0 +1,44 @@
+uuid: 5350f088-aea7-410e-b265-a3882d74dcb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.image_only
+    - field.field.node.art_page.body
+    - field.field.node.art_page.field_admin_notes
+    - field.field.node.art_page.field_admin_tags
+    - field.field.node.art_page.field_comments
+    - field.field.node.art_page.field_metatags
+    - field.field.node.art_page.field_preview
+    - field.field.node.art_page.field_subtitle
+    - field.field.node.art_page.field_tags
+    - node.type.art_page
+  module:
+    - user
+id: node.art_page.image_only
+targetEntityType: node
+bundle: art_page
+mode: image_only
+content:
+  field_preview:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_admin_notes: true
+  field_admin_tags: true
+  field_comments: true
+  field_metatags: true
+  field_subtitle: true
+  field_tags: true

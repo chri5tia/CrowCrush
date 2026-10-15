@@ -1,0 +1,76 @@
+uuid: 083ecc37-a5aa-4f9a-afab-69e92d8f1f47
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - media.type.document
+    - media.type.image
+    - node.type.art_page
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - file
+    - filter
+    - media
+    - node
+    - profile
+    - system
+    - taxonomy
+    - toolbar
+_core:
+  default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
+id: content_editor
+label: 'Content editor'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer comments'
+  - 'create art_page content'
+  - 'create article content'
+  - 'create document media'
+  - 'create image media'
+  - 'create page content'
+  - 'create terms in tags'
+  - 'delete any art_page content'
+  - 'delete any article content'
+  - 'delete article revisions'
+  - 'delete media'
+  - 'delete own art_page content'
+  - 'delete own article content'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'delete terms in tags'
+  - 'edit any art_page content'
+  - 'edit any article content'
+  - 'edit any document media'
+  - 'edit any page content'
+  - 'edit own art_page content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'revert art_page revisions'
+  - 'update media'
+  - 'use text format full_html'
+  - 'view all revisions'
+  - 'view art_page revisions'
+  - 'view own profile'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view term revisions in tags'
+  - 'view the administration theme'
