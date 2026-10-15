@@ -58,6 +58,7 @@ h1, h1.page-title {
 
 h2 {
     font-family: var(--text-lead);
+    padding: 20px;
 }
 
 h2 a {
@@ -191,6 +192,7 @@ h1.page-title,
     border-radius: var(--radius-md);
     padding: 20px;
     margin-bottom: 30px;
+    opacity: 95%;
 }
 
 .node--view-mode-full {
