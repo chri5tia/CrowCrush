@@ -1,4 +1,4 @@
-uuid: 5dc6c127-1d7e-4288-9f58-15601af9d87c
+uuid: 7e566f6e-ac97-4245-a158-3c86d6f686c5
 langcode: en
 status: true
 dependencies:
@@ -9,17 +9,17 @@ dependencies:
   theme:
     - crowcrush
 _core:
-  default_config_hash: pniBX-qx0km_xEJ-zQdo_jUjI3whmWIxhdyKVH4_qqc
+  default_config_hash: dWThK9obuv2HidRYuX-ouETy3DQj-duHrsgqdQUyoKc
 id: crowcrush_tools
 theme: crowcrush
-region: sidebar_second
-weight: -5
+region: slideout
+weight: -23
 provider: null
 plugin: 'system_menu_block:tools'
 settings:
   id: 'system_menu_block:tools'
   label: Tools
-  label_display: '0'
+  label_display: visible
   provider: system
   level: 1
   depth: 0

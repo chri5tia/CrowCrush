@@ -1,4 +1,4 @@
-uuid: 58fd4493-9f49-407b-8be2-c28e06a99b5c
+uuid: cd473f80-6ab4-4a66-99f5-adc3dfd655c2
 langcode: en
 status: true
 dependencies:
@@ -9,11 +9,11 @@ dependencies:
   theme:
     - crowcrush
 _core:
-  default_config_hash: d99DFYwcsS3T3yOmWYYtVUK_s55wP-HnegXe0GvtsBs
+  default_config_hash: ce_cc-srfizYJfu0w5FMGxbEvOQsA46Ks82IG5cwFQc
 id: crowcrush_footer
 theme: crowcrush
 region: footer
-weight: -6
+weight: -8
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

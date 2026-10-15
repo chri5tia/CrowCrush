@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.art_page.field_preview
     - field.field.node.art_page.field_subtitle
     - field.field.node.art_page.field_tags
+    - image.style.medium
     - node.type.art_page
   module:
     - comment
@@ -44,7 +45,7 @@ content:
     label: hidden
     settings:
       photoswipe_thumbnail_style_first: ''
-      photoswipe_thumbnail_style: ''
+      photoswipe_thumbnail_style: medium
       photoswipe_image_style: ''
       photoswipe_reference_image_field: field_media_image
       photoswipe_view_mode: default

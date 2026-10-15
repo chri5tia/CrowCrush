@@ -26,6 +26,7 @@
         "drupal/admin_toolbar": "^3.6",
         "drupal/adminimal_admin_toolbar": "^2.0",
         "drupal/adminimal_theme": "^1.7",
+        "drupal/basecore": "^1.0",
         "drupal/bootstrap_business": "^1.0@beta",
         "drupal/bulk_edit_terms": "^2.2",
         "drupal/classy": "^1.0",

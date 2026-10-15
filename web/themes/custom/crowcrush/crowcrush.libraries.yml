@@ -4,9 +4,7 @@ global-scripts:
 global-styles:
   css:
     theme:
-      css/beargoyles.css: {}
       css/dotsplash.css: {}
-      css/dorquenet.css: {}
       css/chatbox.css: {}
       css/crowcrush.css: {}
   js:

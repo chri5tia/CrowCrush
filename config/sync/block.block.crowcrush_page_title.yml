@@ -1,15 +1,15 @@
-uuid: 4a8a6f38-3e84-4c05-be68-2f6f41c92930
+uuid: 31278a5b-f122-4bbb-8692-f7e11e5668c1
 langcode: en
 status: true
 dependencies:
   theme:
     - crowcrush
 _core:
-  default_config_hash: a_ewKQxu8obIPnNMIOBV6iFGLMm334WARDJJb3Hlv6w
+  default_config_hash: DGwPfILQ8-LrN0DXZhKk3aHzYKW2BPBxlnXd6PlB48A
 id: crowcrush_page_title
 theme: crowcrush
 region: content
-weight: -4
+weight: -15
 provider: null
 plugin: page_title_block
 settings:

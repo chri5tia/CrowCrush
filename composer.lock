@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "71230ba2993785458ff2e17043104b3e",
+    "content-hash": "ac2d55552afe2c6cfb885b61f25ec54d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1483,6 +1483,55 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/adminimal_theme",
                 "issues": "https://www.drupal.org/project/issues/adminimal_theme"
+            }
+        },
+        {
+            "name": "drupal/basecore",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/basecore.git",
+                "reference": "1.0.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/basecore-1.0.5.zip",
+                "reference": "1.0.5",
+                "shasum": "5cd731b032edab8bce625834840569d5e1c9d8e2"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10 || ^11"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.5",
+                    "datestamp": "1767692767",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "evankay",
+                    "homepage": "https://www.drupal.org/user/2912669"
+                },
+                {
+                    "name": "skounis",
+                    "homepage": "https://www.drupal.org/user/877552"
+                }
+            ],
+            "description": "More than Theme's base theme",
+            "homepage": "https://www.drupal.org/project/basecore",
+            "support": {
+                "source": "https://git.drupalcode.org/project/basecore",
+                "url": "https://morethanthemes.com"
             }
         },
         {

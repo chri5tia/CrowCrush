@@ -1,15 +1,15 @@
-uuid: 5474ffa8-604e-4b86-8405-81ee355d0882
+uuid: bb03ec5e-eb7a-4ed8-88b4-9af5b7e97171
 langcode: en
 status: true
 dependencies:
   theme:
     - crowcrush
 _core:
-  default_config_hash: ng-kM_yCPtkiKiKv3JlE2F2fzheJj1LWMEEMf4VfQ7k
+  default_config_hash: EnvzB-RnrYMfCKchqY_zlI6B33qs3atptOURodR8ZHI
 id: crowcrush_local_actions
 theme: crowcrush
 region: content
-weight: -5
+weight: -17
 provider: null
 plugin: local_actions_block
 settings:
