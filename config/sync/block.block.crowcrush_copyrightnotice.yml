@@ -11,7 +11,7 @@ dependencies:
 id: crowcrush_copyrightnotice
 theme: crowcrush
 region: footer
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:a4ec1385-9b80-41b6-b65c-eb52df9ab6e0'
 settings:

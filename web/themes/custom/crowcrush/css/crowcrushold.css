@@ -555,10 +555,6 @@ img {
   line-height: 2rem;
 }
 
-.button {
-  border-radius: 15px;
-}
-
 .captcha {
   border-style: solid;
   border-width: 1px;

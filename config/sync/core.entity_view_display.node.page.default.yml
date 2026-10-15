@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_preview
-    - image.style.large
+    - image.style.wide
     - node.type.page
   module:
     - photoswipe
@@ -30,7 +30,7 @@ content:
     label: hidden
     settings:
       photoswipe_thumbnail_style_first: ''
-      photoswipe_thumbnail_style: large
+      photoswipe_thumbnail_style: wide
       photoswipe_image_style: ''
       photoswipe_reference_image_field: field_media_image
       photoswipe_view_mode: default

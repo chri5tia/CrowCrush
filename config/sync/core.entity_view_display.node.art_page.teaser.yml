@@ -24,12 +24,12 @@ bundle: art_page
 mode: teaser
 content:
   body:
-    type: text_trimmed
+    type: text_summary_or_trimmed
     label: hidden
     settings:
-      trim_length: 150
+      trim_length: 200
     third_party_settings: {  }
-    weight: 2
+    weight: 1
     region: content
   field_preview:
     type: media_thumbnail
@@ -42,22 +42,11 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_tags:
-    type: entity_reference_label
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 3
-    region: content
 hidden:
   field_admin_notes: true
   field_admin_tags: true
   field_comments: true
   field_metatags: true
   field_subtitle: true
+  field_tags: true
+  links: true
