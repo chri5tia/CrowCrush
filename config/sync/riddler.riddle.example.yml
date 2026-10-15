@@ -1,0 +1,10 @@
+uuid: 8585c954-c2f9-4233-8a52-a29dec328fba
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: f7dN3Eb7xyyMUWug2Gwt-bjoXTpTvtXXGMQmIS4LJ44
+id: example
+question: 'Are you a bot or a spammer?'
+solution: 'no'
+hint: 'Answer "no". Just type "no" in the field.'
