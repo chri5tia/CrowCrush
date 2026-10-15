@@ -1,4 +1,4 @@
-name: Beargoyles
+name: CrowCrush
 type: drupal11
 docroot: web
 php_version: "8.3"
@@ -12,33 +12,46 @@ database:
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
+nodejs_version: "24"
 corepack_enable: true
 
 # Key features of DDEV's config.yaml:
 
 # name: <projectname> # Name of the project, automatically provides
 #   http://projectname.ddev.site and https://projectname.ddev.site
+# If the name is omitted, the project will take the name of the enclosing directory,
+# which is useful if you want to have a copy of the project side by side with this one.
 
-# type: <projecttype>  # backdrop, cakephp, craftcms, drupal, drupal6, drupal7, drupal8, drupal9, drupal10, drupal11, laravel, magento, magento2, php, shopware6, silverstripe, symfony, typo3, wordpress
-# See https://ddev.readthedocs.io/en/stable/users/quickstart/ for more
+# type: <projecttype>  # asterios, backdrop, cakephp, codeigniter, craftcms, drupal, drupal6, drupal7, drupal8, drupal9, drupal10, drupal11, drupal12, generic, joomla, laravel, magento, magento2, maho, modx, php, shopware6, silverstripe, symfony, typo3, wordpress, wp-bedrock
+# See https://docs.ddev.com/en/stable/users/quickstart/ for more
 # information on the different project types
 
 # docroot: <relative_path> # Relative path to the directory containing index.php.
 
-# php_version: "8.3"  # PHP version to use, "5.6" through "8.4"
+# php_version: "8.4"  # PHP version to use, "5.6" through "8.5"
 
 # You can explicitly specify the webimage but this
-# is not recommended, as the images are often closely tied to DDEV's' behavior,
+# is not recommended, as the images are often closely tied to DDEV's behavior,
 # so this can break upgrades.
 
-# webimage: <docker_image>  # nginx/php docker image.
+# webimage: <docker_image>
+# It’s unusual to change this option, and we don’t recommend it without Docker experience and a good reason.
+# Typically, this means additions to the existing web image using a .ddev/web-build/Dockerfile.*
 
 # database:
 #   type: <dbtype> # mysql, mariadb, postgres
 #   version: <version> # database version, like "10.11" or "8.0"
-#   MariaDB versions can be 5.5-10.8, 10.11, and 11.4.
-#   MySQL versions can be 5.5-8.0.
-#   PostgreSQL versions can be 9-17.
+#   MariaDB versions can be 5.5-10.8, 10.11, 11.4, 11.8, 12.3
+#   MySQL versions can be 5.5-8.0, 8.4, 9.7
+#   PostgreSQL versions can be 9-18
+
+# You can explicitly specify the dbimage but this
+# is not recommended, as the images are often closely tied to DDEV's behavior,
+# so this can break upgrades.
+
+# dbimage: <docker_image>
+# It’s unusual to change this option, and we don’t recommend it without Docker experience and a good reason.
+# Typically, this means additions to the existing db image using a .ddev/db-build/Dockerfile.*
 
 # router_http_port: <port>  # Port to be used for http (defaults to global configuration, usually 80)
 # router_https_port: <port> # Port for https (defaults to global configuration, usually 443)
