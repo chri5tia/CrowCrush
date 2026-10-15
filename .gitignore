@@ -16,6 +16,9 @@ web/core
 # that core/assets/vendor and any other vendor directories within contrib or
 # custom module, theme, etc., are not ignored unless you purposely do so.
 /vendor/
+web/modules/contrib
+web/themes/contrib
+web/libraries
 
 # Ignore configuration files that may contain sensitive information.
 web/sites/*/settings*.php
