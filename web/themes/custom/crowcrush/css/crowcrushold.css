@@ -1,0 +1,967 @@
+/*
+ * Crowcrush styles — reorganized from the supplied combined stylesheet.
+ * Active declarations are followed by commented alternatives where the
+ * same selector/property had more than one value.
+ * Palette: adjust colors here. Historical purple accents are mapped to red.
+ * Note: grouping by selector can alter the CSS cascade; compare visually.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Gwendolyn&family=Montserrat:wght@300&family=Nunito:wght@300;400&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --red: #CC3366;
+  --teal: #3B8272;
+  --yellow: #D4BE42;
+  --charcoal: #333333;
+}
+
+
+/* ====================================================================
+   02 TYPOGRAPHY AND HEADINGS
+   ==================================================================== */
+
+#block-node-recent .node-title {
+  color: var(--red);
+}
+
+#block-node-recent .node-title a:hover {
+  color: var(--yellow);
+  /* Alternative: color: var(--red); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+#pre-header h2:after {
+  display: none;
+}
+
+#promoted h2:after {
+  display: none;
+}
+
+#site-name a {
+  color: var(--charcoal);
+  font-size: 52px;
+  font-weight: 800;
+  /* Alternative: font-weight: 600; */
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+}
+
+.block-crowcrush-page-title {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+}
+
+.block-page-title-block {
+  text-transform: capitalize;
+}
+
+.search-result__title {
+  font-size: 4rem;
+  line-height: 2;
+}
+
+.search-result__title a:hover {
+  color: var(--red);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.sidebar h2:after {
+  display: none;
+}
+
+/* .title-sep:after {
+  display: none;
+} */
+
+b {
+  font-weight: 700;
+}
+
+blockquote p {
+  font-size: x-large;
+  font-style: italic;
+}
+
+body {
+  line-height: 200%;
+  font-family: "Nunito", sans-serif;
+}
+
+div#site-name {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  color: var(--charcoal);
+}
+
+div#site-slogan {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  color: var(--charcoal);
+  font-size: 24px;
+  font-style: italic;
+}
+
+div.meta.submitted {
+  color: var(--teal);
+  /* Alternative: color: var(--red); */
+  font-size: 16px;
+}
+
+em {
+  font-weight: 700;
+}
+
+h1 {
+  color: var(--charcoal);
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1 a {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+h1.page-title {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+}
+
+h2 {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  color: var(--charcoal);
+  /* Alternative: color: var(--red); */
+  /* Optional palette choice: color: var(--teal); */
+  /* Optional palette choice: color: var(--yellow); */
+  line-height: 200%;
+  font-family: Playfair Display, serif;
+  /* Alternative: font-family: nunito, sans-serif; */
+  font-weight: normal;
+}
+
+h2 a {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+h3 {
+  color: var(--charcoal);
+  line-height: 200%;
+  font-family: Playfair Display, serif;
+  /* Alternative: font-family: "Nunito", sans-serif; */
+}
+
+h3 a {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+h4 {
+  color: var(--charcoal);
+  line-height: 200%;
+  font-family: Playfair Display, serif;
+  /* Alternative: font-family: "Nunito", sans-serif; */
+}
+
+h4 a {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+h5 {
+  color: var(--charcoal);
+  line-height: 200%;
+  font-family: Playfair Display, serif;
+  /* Alternative: font-family: "Nunito", sans-serif; */
+}
+
+h5 a {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+h6 {
+  color: #666666;
+  line-height: 200%;
+  font-family: Playfair Display, serif;
+  /* Alternative: font-family: "Nunito", sans-serif; */
+}
+
+h6 a {
+  color: var(--charcoal);
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.5;
+  /* Alternative: line-height: 200%; */
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  /* Alternative: font-size: large; */
+}
+
+p.small-print {
+  font-size: small;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* ====================================================================
+   03 LAYOUT, CONTAINERS AND GENERAL STYLES
+   ==================================================================== */
+
+#banner-inside {
+  padding-top: 20px;
+  margin-bottom: 0px;
+  /* Alternative: margin-bottom: 0; */
+}
+
+#forum thead a:hover {
+  color: var(--yellow);
+  /* Alternative: color: var(--red); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+#header {
+  background-color: var(--charcoal);
+}
+
+#main-content {
+  padding: 20px 0 30px 0;
+}
+
+.block {
+  border-radius: 15px;
+  padding: 0 0 5px 0;
+}
+
+.block-crowcrush-local-tasks {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+}
+
+.bottomleaf {
+  color: #666666;
+  padding: 20px;
+  font-size: small;
+}
+
+.call-to-action .btn {
+  border-color: var(--yellow);
+  background-color: var(--red);
+  /* Alternative: background-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+.css-dt0ym9 {
+  width: auto !important;
+}
+
+.highlighted-block .btn:focus {
+  border-color: var(--yellow);
+  background-color: var(--red);
+  /* Alternative: background-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+.highlighted-block .btn:hover {
+  border-color: var(--yellow);
+  background-color: var(--red);
+  /* Alternative: background-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+.item-list ul li {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  border-color: grey;
+  opacity: 80%;
+  padding: 15px;
+  padding-bottom: 50px;
+  margin-bottom: 25px;
+  border: 1px grey solid;
+}
+
+.region-content {
+  border-radius: 15px;
+}
+
+.roundcorner {
+  border-style: solid;
+  border-width: 1px;
+  background-color: #FFFFFF;
+  border-color: var(--yellow);
+  padding: 35px;
+  margin-bottom: 50px;
+}
+
+.sidebar-no-border {
+  margin-bottom: 20px;
+}
+
+.sideleaf {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  border-color: var(--yellow);
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.sideleaf2 {
+  border-radius: 15px;
+}
+
+.tag a:hover {
+  border-color: var(--yellow);
+  background-color: var(--red);
+  /* Alternative: background-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+a {
+  color: var(--teal);
+  /* Alternative: color: var(--red); */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:focus {
+  color: var(--yellow);
+  /* Alternative: color: var(--red); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+a:hover {
+  color: var(--yellow);
+  /* Alternative: color: var(--red); */
+  /* text-decoration: none; */
+  text-decoration: underline;
+}
+
+div#block-branding-crowcrush {
+  background-color: #FFFFFF;
+  opacity: 85%;
+  z-index: 100;
+  position: relative;
+}
+
+div.messages.messages {
+  margin-right: 0;
+  border-radius: 15px;
+}
+
+div.messages.messages--status {
+  border-radius: 15px;
+  margin-right: 0px;
+}
+
+div.view-header {
+  margin-bottom: 25px;
+  line-height: 1.2;
+  font-family: Gwendolyn;
+  font-size: 38px;
+  color: var(--red);
+}
+
+/* ====================================================================
+   04 NAVIGATION AND LINKS
+   ==================================================================== */
+
+#main-navigation ul.menu li {
+  border-radius: 15px;
+}
+
+#main-navigation ul.menu li a {
+  padding: 5px;
+  margin: 20px;
+}
+
+#region-sidebar-second ul.menu li {
+  color: var(--red);
+}
+
+.breadcrumb {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+  margin: 0px;
+  /* Alternative: margin: 0; */
+  border: 1px solid #eaeaea;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.menu-item {
+  border-radius: 15px;
+}
+
+.node__links {
+  /* float: right; */
+  font-size: 85%;
+}
+
+.region-sidebar-second ul.menu li {
+  border-style: solid;
+  border: 0;
+  text-align: center;
+  padding: 10px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  list-style: none;
+  width: 150px;
+  float: right;
+  border-bottom: 3px var(--red) solid;
+}
+
+ul.links li a.active {
+  color: var(--red);
+  /* Alternative: color: var(--yellow); */
+}
+
+ul.links li a:hover {
+  color: var(--yellow);
+  /* Alternative: color: var(--red); */
+}
+
+ul.links.field__items li {
+  border-radius: 15px;
+  list-style: none;
+  float: right;
+  padding: 2px;
+  /* Alternative: padding: 0 10px; */
+  text-transform: uppercase;
+  background-color: #f4f7fb;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0 0 5px;
+}
+
+ul.menu li {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+}
+
+ul.menu li a.active {
+  color: var(--red);
+  /* Alternative: color: var(--yellow); */
+}
+
+ul.menu li a:hover {
+  color: var(--yellow);
+  /* Alternative: color: var(--red); */
+}
+
+ul.tabs li {
+  border-radius: 15px;
+}
+
+ul.tabs li a:hover {
+  border: 0px;
+  /* Alternative: border: 0; */
+  background-color: #FFFFFF;
+}
+
+ul.tabs.primary {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+}
+
+/* ====================================================================
+   05 CONTENT AND NODES
+   ==================================================================== */
+
+.field--type-text-with-summary {
+  border-radius: 15px;
+}
+
+.field-item:hover {
+  border-radius: 15px;
+}
+
+.field__item a {
+  font-weight: 600;
+}
+
+.node--view-mode-search-index {
+  border-radius: 15px;
+  color: var(--charcoal);
+  border-color: var(--charcoal);
+  padding: 15px;
+}
+
+.node--view-mode-teaser {
+  border-radius: 15px;
+  color: var(--charcoal);
+  border-color: var(--charcoal);
+  padding: 15px;
+  border: thin #666666 solid;
+  background-color: #FFFFFF;
+}
+
+.node__content {
+  border-radius: 15px;
+  padding: 0 40px;
+}
+
+.path-node #content-wrapper {
+  border-radius: 15px;
+  color: var(--charcoal);
+  border-color: var(--charcoal);
+  padding: 15px;
+  border: thin #666666 solid;
+  background-color: #FFFFFF;
+}
+
+ol.search-results.node_search-results {
+  background-color: #FFFFFF;
+  color: var(--charcoal);
+  padding: 15px;
+}
+
+/* ====================================================================
+   06 IMAGES AND GALLERIES
+   ==================================================================== */
+
+figure.caption-img img {
+  border-radius: 15px;
+}
+
+img {
+  border: thin #666666 solid;
+  border-radius: 15px;
+}
+
+/* ====================================================================
+   07 FORMS AND CONTROLS
+   ==================================================================== */
+
+#desc-label {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.button {
+  border-radius: 15px;
+}
+
+.captcha {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  border-color: var(--yellow);
+  padding: 35px;
+}
+
+.clearfix.text-formatted.field.field--name-description.field--type-text-long.field--label-hidden.field__item p {
+  border-radius: 15px;
+}
+
+.dark input[type="submit"] {
+  border-color: var(--yellow);
+  background-color: lightgray;
+}
+
+.field.field--name-field-subtitle.field--type-string.field--label-hidden.field__item {
+  font-size: 1.3em;
+  color: var(--red);
+  font-style: italic;
+}
+
+.field.field--name-name.field--type-string.field--label-hidden.field__item {
+  z-index: 100;
+  position: relative;
+  padding-left: 2px;
+  font-weight: 800;
+}
+
+.field__label {
+  font-size: large;
+  font-weight: 600;
+}
+
+.form-composite > .fieldset-wrapper > .description {
+  font-size: 2em;
+}
+
+.form-item .description {
+  font-size: 2em;
+}
+
+.label {
+  color: var(--teal);
+}
+
+.search-block-form input.form-search {
+  width: 100%;
+}
+
+::-moz-selection {
+  border-color: var(--yellow);
+  background-color: var(--red);
+  /* Alternative: background-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+::selection {
+  border-color: var(--yellow);
+  background-color: var(--red);
+  /* Alternative: background-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+button {
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+div#edit-captcha-response--description {
+  font-size: large;
+}
+
+input {
+  color: var(--red);
+  font-size: 18px;
+}
+
+input#edit-captcha-response {
+  border-style: solid;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+  border-color: #eaeaea;
+  font-size: 24px;
+  padding: 15px;
+  min-height: 50px;
+  opacity: 90%;
+  margin-bottom: 20px;
+}
+
+input#edit-keys {
+  border-style: solid;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+  border-color: #eaeaea;
+  font-size: 24px;
+  padding: 15px;
+  min-height: 50px;
+  opacity: 90%;
+  margin-bottom: 20px;
+}
+
+input#edit-keys--2 {
+  border-style: solid;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+  border-color: #eaeaea;
+  font-size: 24px;
+  padding: 15px;
+  min-height: 50px;
+  opacity: 90%;
+  margin-bottom: 20px;
+}
+
+input#edit-mail {
+  border-style: solid;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+  border-color: #eaeaea;
+  font-size: 24px;
+  padding: 15px;
+  min-height: 50px;
+  opacity: 90%;
+  margin-bottom: 20px;
+}
+
+input#edit-name {
+  border-style: solid;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+  border-color: #eaeaea;
+  font-size: 24px;
+  padding: 15px;
+  min-height: 50px;
+  opacity: 90%;
+  margin-bottom: 20px;
+}
+
+input#edit-pass {
+  border-style: solid;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+  border-color: #eaeaea;
+  font-size: 24px;
+  padding: 15px;
+  min-height: 50px;
+  opacity: 90%;
+  margin-bottom: 20px;
+}
+
+input#edit-submit {
+  margin: 20px 0 0 0;
+}
+
+input.button {
+  border-radius: 15px;
+}
+
+input.form-email {
+  color: var(--teal);
+  /* Alternative: color: var(--red); */
+  padding: 10px;
+}
+
+input.form-search {
+  color: var(--teal);
+  /* Alternative: color: var(--red); */
+  padding: 10px;
+}
+
+input.form-text {
+  color: var(--teal);
+  /* Alternative: color: var(--red); */
+  padding: 10px;
+}
+
+input.form-text:focus {
+  border-color: var(--red);
+  /* Alternative: border-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+input.pp-59E8KFEYB3JV8 {
+  border-radius: 15px;
+}
+
+input.pp-WAQZYM62ZJPS4 {
+  border-radius: 15px;
+}
+
+input.search-text:focus {
+  border-color: var(--red);
+  /* Alternative: border-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+input[type="button"]:hover {
+  border-color: var(--yellow);
+  background-color: var(--red);
+  /* Alternative: background-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+input[type="reset"]:hover {
+  border-color: var(--yellow);
+  background-color: var(--red);
+  /* Alternative: background-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+input[type="submit"]:hover {
+  border-color: var(--yellow);
+  background-color: var(--red);
+  /* Alternative: background-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+label {
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  color: var(--red);
+  font-weight: 400;
+}
+
+label.input-label {
+  background-color: #FFFFFF;
+  color: var(--red);
+  font-weight: 400;
+}
+
+legend.captcha__title.js-form-required.form-required {
+  /* display: none; */
+}
+
+select {
+  color: var(--teal);
+  /* Alternative: color: var(--red); */
+  padding: 10px;
+  font-size: 18px;
+}
+
+select#edit-selector {
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+}
+
+select#edit-tid {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+  box-shadow: none;
+  padding: 15px 24px;
+  text-transform: uppercase;
+  opacity: 90%;
+}
+
+select#edit-tid-1 {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+  box-shadow: none;
+  padding: 15px 24px;
+  text-transform: uppercase;
+  opacity: 90%;
+}
+
+select#selector {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  box-shadow: none;
+  padding: 15px 24px;
+  text-transform: uppercase;
+  opacity: 90%;
+}
+
+textarea#edit-message-0-value {
+  border-style: solid;
+  border-radius: 15px;
+  color: #FFFFFF;
+  background-color: var(--charcoal);
+  border-color: #eaeaea;
+  font-size: 24px;
+  padding: 15px;
+  min-height: 50px;
+  opacity: 90%;
+  margin-bottom: 20px;
+}
+
+textarea.form-textarea {
+  border-radius: 15px;
+  color: var(--teal);
+  padding: 10px;
+}
+
+textarea.form-textarea:focus {
+  border-color: var(--red);
+  /* Alternative: border-color: var(--yellow); */
+  /* Legacy purple was mapped to the red palette. */
+}
+
+/* ====================================================================
+   08 TAXONOMY AND TAGS
+   ==================================================================== */
+
+.field--name-field-tags {
+  direction: rtl;
+  text-align: right;
+}
+
+.field--name-field-tags .field__item {
+  border-radius: 15px;
+  float: right;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: x-large;
+  margin: 5px 0 0 5px;
+  line-height: 150%;
+}
+
+.field--name-field-tags .field__item a:hover {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.node--view-mode-full .field--name-field-tags .field__item {
+  font-size: large;
+}
+
+.taxonomy-term .field--name-description {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  color: #FFFFFF;
+  border-color: #eaeaea;
+  margin-bottom: 25px;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.taxonomy-term .field--name-description p {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.taxonomy-term .field--name-description:empty {
+  padding: 3px;
+}
+
+/* ====================================================================
+   09 FOOTER
+   ==================================================================== */
+
+#subfooter {
+  border-top-style: solid;
+  border-top-width: 1px;
+  background-color: #FFFFFF;
+  color: #666666;
+  border-top-color: #eaeaea;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+p.footer {
+  font-size: small;
+  letter-spacing: 1.75px;
+  color: var(--charcoal)
+}
+
+/* REVIEW NOTES
+ * - The taxonomy description's -900px/+900px trick and black background were removed.
+ * - h2, links etc may have styles in more specific selectors: those rules are
+ *   retained separately, as the browser's specificity still matters.
+ * - CSS @imports have been moved to the top.
+ */
+
+ .field--name-field-art-version {
+  position: relative;
+  z-index: 100;
+  width: 200px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.field--name-field-art-version img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

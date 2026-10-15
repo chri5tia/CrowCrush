@@ -5,7 +5,6 @@ global-styles:
   css:
     theme:
       css/chatbox.css: {}
-      css/crowoldboot.css: {}
       css/crowcrush.css: {}
       css/dotsplash.css: {}
   js:

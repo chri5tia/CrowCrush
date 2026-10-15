@@ -5,9 +5,8 @@
 }
 
 .crowcrush-comments__chatbox {
-  background: rgba(119, 108, 89, 0.40);
+  /* background: rgba(119, 108, 89, 0.40); */
   border: 1px solid rgba(81, 56, 126, 0.10);
-  border-radius: 15px;
   padding: 0.75rem 1.5rem;
 }
 
@@ -20,9 +19,9 @@
   padding: 1rem 0;
 }
 
-.crowcrush-comments__chatbox .comment + .comment {
+/* .crowcrush-comments__chatbox .comment + .comment {
   border-top: 1px solid rgba(81, 56, 126, 0.12);
-}
+} */
 
 .crowcrush-comment {
   background: transparent;
@@ -45,23 +44,21 @@
   margin-top: 1.5rem;
 }
 
+.comment {
+  /* border-radius: 15px;
+  border: thin var(--charcoal) solid; */
+}
+
+/* Comment input fields */
 textarea#edit-comment-body-0-value,
 input#edit-field-comment-nickname-0-value {
-    font-size: 18px;
-    padding: 10px;
+  /* font-size: 18px; */
+  padding: 10px;
+  /* border-radius: 15px;
+  border: 1px solid rgba(81, 56, 126, 0.10); */
 }
 
-.field--name-field-art-version {
-  position: relative;
-  z-index: 100;
-  width: 200px;
-  margin-left: auto;
-  margin-right: 20px;
-  margin-bottom: 10px;
-}
-
-.field--name-field-art-version img {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Hide html rules since it's plain text */
+.comment-form .filter-wrapper {
+  display: none;
 }

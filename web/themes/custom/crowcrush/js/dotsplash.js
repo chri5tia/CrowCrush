@@ -1,7 +1,8 @@
-
+// Based on code at https://codepen.io/tholman/pen/ifDak by Tim Holman
 function dotsplash() {
   var canvas;
   var context;
+
   var width;
   var height;
 
@@ -26,34 +27,29 @@ function dotsplash() {
     canvas.width = width;
     canvas.height = height;
 
+    // Pre-populate the background
     prepopulateBackground();
   };
 
-  // Generate a random color
-  function getGothicWhimsicalColor(opacity) {
+  // Function to generate a random whimsical color
+  function getWhimsicalColor(opacity) {
     var category = Math.random();
+
     var r, g, b;
 
     if (category < 0.25) {
-      // Black and grey
-      var greyValue = Math.floor(Math.random() * 100);
+      var greyValue = Math.floor(Math.random() * 100); // Black and grey
       r = g = b = greyValue;
-
     } else if (category < 0.5) {
-      // Deep dark colors
-      var baseValue = Math.floor(Math.random() * 100);
+      var baseValue = Math.floor(Math.random() * 100); // Deep dark colors
       var variation = Math.floor(Math.random() * 50);
-
       r = baseValue + variation * (Math.random() < 0.33 ? 1 : 0);
       g = baseValue + variation * (Math.random() < 0.33 ? 1 : 0);
       b = baseValue + variation * (Math.random() < 0.33 ? 1 : 0);
-
     } else {
-      // Bright colors
-      r = Math.floor(Math.random() * 256);
+      r = Math.floor(Math.random() * 256); // Bright colors
       g = Math.floor(Math.random() * 256);
       b = Math.floor(Math.random() * 256);
-
       if (Math.random() < 0.5) {
         r = Math.min(255, r + 150);
         g = Math.min(255, g + 150);
@@ -64,21 +60,20 @@ function dotsplash() {
     return `rgba(${r}, ${g}, ${b}, ${opacity})`;
   }
 
-  // Generate the background once
-  function prepopulateBackground() {
-    const totalClusters = 50;
-    const blackClusters = 5;
+  var prepopulateBackground = function () {
+    const totalClusters = 2; // Total number of clusters
+    const blackClusters = 1; // Number of black clusters
 
+    // Helper function to draw a cluster
     function drawCluster(clusterX, clusterY, clusterSize, clusterColor) {
       context.fillStyle = clusterColor;
       context.strokeStyle = clusterColor;
 
-      const shapesInCluster = Math.floor(Math.random() * 10) + 1;
+      const shapesInCluster = Math.floor(Math.random() * 5) + 1; // 1-5 shapes per cluster
 
       for (let j = 0; j < shapesInCluster; j++) {
-        const offsetX = (Math.random() - 0.5) * clusterSize * 10;
+        const offsetX = (Math.random() - 0.5) * clusterSize * 10; // Tight grouping
         const offsetY = (Math.random() - 0.5) * clusterSize * 10;
-
         const x = clusterX + offsetX;
         const y = clusterY + offsetY;
         const size = Math.random() * clusterSize;
@@ -92,16 +87,14 @@ function dotsplash() {
           // Jagged line
           for (let k = 0; k < 5; k++) {
             context.lineTo(
-              x + Math.random() * size * 20 - size * 10,
-              y + Math.random() * size * 20 - size * 10
+              x + Math.random() * size * 10 - size * 5,
+              y + Math.random() * size * 10 - size * 5
             );
           }
-
         } else if (shapeType < 0.7) {
           // Distorted circle
-          const radiusX = size * 10 * Math.random();
-          const radiusY = size * 10 * Math.random();
-
+          const radiusX = size * 100 * Math.random();
+          const radiusY = size * 100 * Math.random();
           context.ellipse(
             x,
             y,
@@ -111,16 +104,13 @@ function dotsplash() {
             0,
             Math.PI * 2
           );
-
         } else {
-          // Polygon
-          const sides = Math.floor(Math.random() * 5) + 3;
+          // Small polygon
+          const sides = Math.floor(Math.random() * 8) + 3;
           const angleStep = (Math.PI * 2) / sides;
-          const radius = size * 10;
-
+          const radius = size * 200;
           for (let k = 0; k < sides; k++) {
             const angle = k * angleStep;
-
             context.lineTo(
               x + radius * Math.cos(angle) + Math.random() * size * 2,
               y + radius * Math.sin(angle) + Math.random() * size * 2
@@ -138,38 +128,20 @@ function dotsplash() {
     for (let i = 0; i < blackClusters; i++) {
       const clusterX = Math.random() * width;
       const clusterY = Math.random() * height;
-      const clusterSize = Math.random() * 15;
-
-      drawCluster(
-        clusterX,
-        clusterY,
-        clusterSize,
-        "rgba(0, 0, 0, 0.5)"
-      );
+      const clusterSize = Math.random() * 5;
+      drawCluster(clusterX, clusterY, clusterSize, "rgba(0, 0, 0, 0.08)");
     }
 
-    // Draw colored clusters
+    // Draw random color clusters
     for (let i = 0; i < totalClusters - blackClusters; i++) {
       const clusterX = Math.random() * width;
       const clusterY = Math.random() * height;
       const clusterSize = Math.random() * 15;
-      const clusterColor = getGothicWhimsicalColor(0.3);
-
-      drawCluster(
-        clusterX,
-        clusterY,
-        clusterSize,
-        clusterColor
-      );
+      const clusterColor = getWhimsicalColor(0.05);
+      drawCluster(clusterX, clusterY, clusterSize, clusterColor);
     }
-  }
+  };
 }
 
-// Initialize once the document is ready
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", function () {
-    new dotsplash().initialize();
-  });
-} else {
-  new dotsplash().initialize();
-}
+var app = new dotsplash();
+app.initialize();
