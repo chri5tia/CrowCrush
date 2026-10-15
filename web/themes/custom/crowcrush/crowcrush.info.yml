@@ -10,7 +10,7 @@ libraries:
  - crowcrush/global-scripts
  - crowcrush/global-styles
 
-Libraries-override:
+libraries-override:
    bootstrap_business/bootstrap: false
 
 # Regions
