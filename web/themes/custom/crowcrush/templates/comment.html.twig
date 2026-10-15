@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Bootstrap Business's theme implementation for comments.
+ *
+ * @see template_preprocess_comment()
+ */
+#}
+{% if threaded %}
+  {{ attach_library('classy/drupal.comment.threaded') }}
+{% endif %}
+{%
+  set classes = [
+    'comment',
+    'js-comment',
+    status != 'published' ? 'comment--' ~ status,
+    comment.owner.anonymous ? 'by-anonymous',
+    author_id and author_id == commented_entity.getOwnerId() ? 'by-' ~ commented_entity.getEntityTypeId() ~ '-author',
+    'clearfix',
+  ]
+%}
+<article role="article"{{ attributes.addClass(classes)|without('role') }}>
+  <span class="hidden" data-comment-timestamp="{{ new_indicator_timestamp }}"></span>
+
+  {% if parent %}
+    <p class="visually-hidden">{{ parent }}</p>
+  {% endif %}
+
+  <div class="crowcrush-comment">
+    <div class="crowcrush-comment__meta">
+      <strong>
+        {{ comment.field_comment_nickname.value ?: 'Anonymous Fan' }}
+      </strong>
+      <span>· {{ posted_ago }} ago</span>
+    </div>
+
+    <div{{ content_attributes.addClass('crowcrush-comment__body') }}>
+      {{ content|without('links', 'field_comment_nickname') }}
+    </div>
+  </div>
+</article>

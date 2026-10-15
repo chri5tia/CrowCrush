@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Default theme override for comment fields.
+ *
+ * @see template_preprocess_field()
+ * @see comment_preprocess_field()
+ */
+#}
+<section{{ attributes.addClass('crowcrush-comments') }}>
+
+  {% if comments %}
+    <div class="crowcrush-comments__chatbox">
+      {{ comments }}
+    </div>
+  {% endif %}
+
+  {% if comment_form %}
+    <div class="crowcrush-comments__form">
+      {{ comment_form }}
+    </div>
+  {% endif %}
+
+</section>

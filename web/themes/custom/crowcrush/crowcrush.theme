@@ -1,0 +1,40 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_preprocess_node__article().
+ */
+function crowcrush_preprocess_node__article(array &$variables): void {
+  $date = $variables['node']->getCreatedTime();
+
+  $variables['date'] = \Drupal::service('date.formatter')
+    ->format($date, 'custom_short_date');
+}
+
+/**
+ * Implements hook_form_comment_form_alter().
+ */
+function crowcrush_form_comment_form_alter(
+  array &$form,
+  FormStateInterface $form_state,
+): void {
+  $form['actions']['submit']['#value'] = t('Post');
+
+  $form['comment_body']['widget'][0]['value']['#title'] =
+    t('Leave a comment');
+
+  $form['comment_body']['widget'][0]['value']['#attributes']['class'][] =
+    'crowcrush-comment-textarea';
+}
+
+/**
+ * Implements hook_preprocess_comment().
+ */
+function crowcrush_preprocess_comment(array &$variables): void {
+  $variables['posted_ago'] = \Drupal::service('date.formatter')
+    ->formatTimeDiffSince(
+      $variables['comment']->getCreatedTime(),
+      ['granularity' => 1],
+    );
+}
