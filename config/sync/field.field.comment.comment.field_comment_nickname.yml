@@ -9,8 +9,8 @@ id: comment.comment.field_comment_nickname
 field_name: field_comment_nickname
 entity_type: comment
 bundle: comment
-label: 'Your Name (real or fake)'
-description: ''
+label: 'What do you want to be called?'
+description: 'Required: You can enter a real name, a fake name, your street name, "anonymous", or whatever you want.'
 required: true
 translatable: false
 default_value: {  }
