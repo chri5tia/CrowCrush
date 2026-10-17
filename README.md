@@ -28,3 +28,7 @@ if (getenv('DRUPAL_ENV') === 'dev' || $_ENV['DRUPAL_ENV'] === 'dev' || $_SERVER[
     $config['config_split.config_split.dev']['status'] = TRUE;
 }
 ```
+
+On prod, you will need to edit the settings.php config sync path and make sure it is ../config/sync.
+
+Upon first deploy from local dev, you also need to run site:install --existing-config. Do not install from the browser.
