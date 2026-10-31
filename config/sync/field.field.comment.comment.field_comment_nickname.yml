@@ -9,7 +9,7 @@ id: comment.comment.field_comment_nickname
 field_name: field_comment_nickname
 entity_type: comment
 bundle: comment
-label: 'What do you want to be called?'
+label: Name
 description: 'Required: You can enter a real name, a fake name, your street name, "anonymous", or whatever you want.'
 required: true
 translatable: false
