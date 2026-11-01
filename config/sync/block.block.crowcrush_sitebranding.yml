@@ -9,12 +9,12 @@ dependencies:
 id: crowcrush_sitebranding
 theme: crowcrush
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'Site branding'
+  label: 'Site branding large'
   label_display: '0'
   provider: system
   use_site_logo: false

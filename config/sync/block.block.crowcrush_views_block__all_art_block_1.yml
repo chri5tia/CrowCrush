@@ -1,0 +1,29 @@
+uuid: e9143b2b-1bde-48db-8ecd-45f5605abfd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.all_art
+  module:
+    - system
+    - views
+  theme:
+    - crowcrush
+id: crowcrush_views_block__all_art_block_1
+theme: crowcrush
+region: banner
+weight: 0
+provider: null
+plugin: 'views_block:all_art-block_1'
+settings:
+  id: 'views_block:all_art-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

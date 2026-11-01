@@ -15,8 +15,8 @@ field_name: comment_body
 entity_type: comment
 bundle: comment
 label: Comment
-description: 'What you say here can be displayed publicly. All comments are subject to approval.'
-required: false
+description: 'What you say here can be displayed publicly. All comments are subject to approval. This field is required to leave a comment.'
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''

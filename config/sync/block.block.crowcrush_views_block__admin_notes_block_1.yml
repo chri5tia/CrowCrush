@@ -5,13 +5,14 @@ dependencies:
   config:
     - views.view.admin_notes
   module:
+    - node
     - views
   theme:
     - crowcrush
 id: crowcrush_views_block__admin_notes_block_1
 theme: crowcrush
-region: sidebar_second
-weight: -5
+region: content
+weight: -1
 provider: null
 plugin: 'views_block:admin_notes-block_1'
 settings:
@@ -22,4 +23,11 @@ settings:
   context_mapping: {  }
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      art_page: art_page

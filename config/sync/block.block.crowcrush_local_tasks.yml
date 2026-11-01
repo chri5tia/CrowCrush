@@ -9,7 +9,7 @@ _core:
 id: crowcrush_local_tasks
 theme: crowcrush
 region: content
-weight: -16
+weight: -5
 provider: null
 plugin: local_tasks_block
 settings:

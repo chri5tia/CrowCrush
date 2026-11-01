@@ -33,11 +33,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
 hidden:
   body: true
   field_admin_notes: true
@@ -50,3 +45,4 @@ hidden:
   field_series: true
   field_subtitle: true
   field_tags: true
+  links: true

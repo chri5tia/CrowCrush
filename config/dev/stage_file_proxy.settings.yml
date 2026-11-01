@@ -1,7 +1,7 @@
-hotlink: true
+hotlink: false
 origin: 'https://crowcrush.com'
-origin_dir: ''
+origin_dir: sites/default/files
 proxy_headers: ''
-use_imagecache_root: false
+use_imagecache_root: true
 verify: true
 excluded_extensions: ''
