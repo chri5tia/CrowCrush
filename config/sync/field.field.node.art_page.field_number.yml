@@ -1,0 +1,19 @@
+uuid: c45154ca-a6d0-4f32-b8b9-f66c9bc15553
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number
+    - node.type.art_page
+id: node.art_page.field_number
+field_name: field_number
+entity_type: node
+bundle: art_page
+label: 'Number in the Series'
+description: 'What number in the series this art piece is. Example: "3". Please only enter the number and not "#3", or "Crow Crush #3".'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

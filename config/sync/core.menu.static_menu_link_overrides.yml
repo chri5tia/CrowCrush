@@ -8,14 +8,14 @@ definitions:
     expanded: false
     enabled: true
   contact__site_page:
+    weight: -47
     menu_name: main
     parent: ''
-    weight: -49
-    expanded: false
     enabled: true
+    expanded: false
   comment__admin:
+    weight: -82
     menu_name: admin
     parent: system.admin_content
-    weight: -86
     expanded: false
     enabled: true

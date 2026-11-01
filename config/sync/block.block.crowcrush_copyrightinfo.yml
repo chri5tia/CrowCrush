@@ -1,0 +1,25 @@
+uuid: bca9db90-2e14-45ce-acc9-05cdfc845ccf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7c88fd61-2f0d-4005-bcfe-e78aacb1f900'
+  module:
+    - block_content
+  theme:
+    - crowcrush
+id: crowcrush_copyrightinfo
+theme: crowcrush
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:7c88fd61-2f0d-4005-bcfe-e78aacb1f900'
+settings:
+  id: 'block_content:7c88fd61-2f0d-4005-bcfe-e78aacb1f900'
+  label: 'Copyright info'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility: {  }

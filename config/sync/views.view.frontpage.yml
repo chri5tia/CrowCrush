@@ -338,26 +338,13 @@ display:
             label: ''
             field_identifier: sticky
           exposed: false
-        random:
-          id: random
-          table: views
-          field: random
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: random
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
       defaults:
         pager: false
         sorts: false
       display_description: 'Original front page view as a block'
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_interface'
         - url.query_args
@@ -376,7 +363,7 @@ display:
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 3
+          items_per_page: 10
           total_pages: 0
           id: 0
           tags:

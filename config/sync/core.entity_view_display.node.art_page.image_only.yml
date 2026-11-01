@@ -7,9 +7,13 @@ dependencies:
     - field.field.node.art_page.body
     - field.field.node.art_page.field_admin_notes
     - field.field.node.art_page.field_admin_tags
+    - field.field.node.art_page.field_available_print_sizes
     - field.field.node.art_page.field_comments
+    - field.field.node.art_page.field_dimensions
     - field.field.node.art_page.field_metatags
+    - field.field.node.art_page.field_number
     - field.field.node.art_page.field_preview
+    - field.field.node.art_page.field_series
     - field.field.node.art_page.field_subtitle
     - field.field.node.art_page.field_tags
     - node.type.art_page
@@ -38,7 +42,11 @@ hidden:
   body: true
   field_admin_notes: true
   field_admin_tags: true
+  field_available_print_sizes: true
   field_comments: true
+  field_dimensions: true
   field_metatags: true
+  field_number: true
+  field_series: true
   field_subtitle: true
   field_tags: true

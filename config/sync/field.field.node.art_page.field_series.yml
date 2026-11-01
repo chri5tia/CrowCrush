@@ -1,0 +1,33 @@
+uuid: 754abe81-6bb3-4d06-9ac7-7b3b2f450e60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_series
+    - node.type.art_page
+    - taxonomy.vocabulary.series
+  content:
+    - 'taxonomy_term:series:1843fdd7-80e5-4e54-af80-69dd421f8c3c'
+id: node.art_page.field_series
+field_name: field_series
+entity_type: node
+bundle: art_page
+label: Series
+description: 'Select which art series this work is part of or add a new one. Example: Crow Crush'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 1843fdd7-80e5-4e54-af80-69dd421f8c3c
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      series: series
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

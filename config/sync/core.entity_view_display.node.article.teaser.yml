@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_preview
-    - field.field.node.article.field_subtitle
     - field.field.node.article.field_tags
     - image.style.large
     - node.type.article
@@ -48,5 +47,4 @@ content:
     region: content
 hidden:
   comment: true
-  field_subtitle: true
   field_tags: true

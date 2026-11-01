@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - block_content.type.basic
     - filter.format.full_html
     - media.type.document
     - media.type.image
@@ -11,13 +12,16 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
+    - block_content
+    - captcha
     - comment
     - contextual
-    - file
     - filter
+    - image
     - media
     - node
     - profile
+    - scheduler
     - system
     - taxonomy
     - toolbar
@@ -29,15 +33,19 @@ weight: 2
 is_admin: false
 permissions:
   - 'access administration pages'
+  - 'access block library'
   - 'access content overview'
   - 'access contextual links'
-  - 'access files overview'
+  - 'access media overview'
+  - 'access taxonomy overview'
   - 'access toolbar'
   - 'administer comments'
+  - 'administer image styles'
   - 'create art_page content'
   - 'create article content'
   - 'create document media'
   - 'create image media'
+  - 'create media'
   - 'create page content'
   - 'create terms in tags'
   - 'delete any art_page content'
@@ -47,14 +55,15 @@ permissions:
   - 'delete own art_page content'
   - 'delete own article content'
   - 'delete own document media'
-  - 'delete own files'
   - 'delete own image media'
   - 'delete own page content'
   - 'delete page revisions'
   - 'delete terms in tags'
   - 'edit any art_page content'
   - 'edit any article content'
+  - 'edit any basic block content'
   - 'edit any document media'
+  - 'edit any image media'
   - 'edit any page content'
   - 'edit own art_page content'
   - 'edit own article content'
@@ -64,7 +73,12 @@ permissions:
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'revert any document media revisions'
+  - 'revert any image media revisions'
   - 'revert art_page revisions'
+  - 'schedule publishing of nodes'
+  - 'skip CAPTCHA'
+  - 'update any media'
   - 'update media'
   - 'use text format full_html'
   - 'view all revisions'

@@ -7,9 +7,13 @@ dependencies:
     - field.field.node.art_page.body
     - field.field.node.art_page.field_admin_notes
     - field.field.node.art_page.field_admin_tags
+    - field.field.node.art_page.field_available_print_sizes
     - field.field.node.art_page.field_comments
+    - field.field.node.art_page.field_dimensions
     - field.field.node.art_page.field_metatags
+    - field.field.node.art_page.field_number
     - field.field.node.art_page.field_preview
+    - field.field.node.art_page.field_series
     - field.field.node.art_page.field_subtitle
     - field.field.node.art_page.field_tags
     - image.style.large
@@ -29,7 +33,7 @@ content:
     settings:
       trim_length: 200
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_preview:
     type: media_thumbnail
@@ -40,13 +44,24 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   field_admin_notes: true
   field_admin_tags: true
+  field_available_print_sizes: true
   field_comments: true
+  field_dimensions: true
   field_metatags: true
-  field_subtitle: true
+  field_number: true
+  field_series: true
   field_tags: true
   links: true

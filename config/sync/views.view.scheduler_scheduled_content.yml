@@ -1031,7 +1031,7 @@ display:
         type: normal
         title: 'Scheduled Content'
         description: 'Content that is scheduled for publishing or unpublishing'
-        weight: -85
+        weight: -81
         enabled: false
         expanded: false
         menu_name: admin
