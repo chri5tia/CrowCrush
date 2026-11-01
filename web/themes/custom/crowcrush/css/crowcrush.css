@@ -97,8 +97,17 @@ div.view-header {
   margin-bottom: 25px;
   line-height: 1.2;
   font-family: var(--text-script);
-  font-size: 38px;
   color: var(--red);
+}
+
+#header {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    min-height: 50px;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    padding: 5px 0px;
+    opacity: 75%;
 }
 
 .node header {

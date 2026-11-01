@@ -43,9 +43,9 @@
   color: var(--charcoal);
   font-size: 52px;
   font-weight: 800;
-  /* Alternative: font-weight: 600; */
   font-family: "Playfair Display", serif;
   font-style: normal;
+  text-align: center;
 }
 
 .block-crowcrush-page-title {
