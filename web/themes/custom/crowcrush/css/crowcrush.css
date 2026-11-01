@@ -57,21 +57,12 @@ h1, h1.page-title {
 }
 
 h2 {
-    color: var(--red);
-    font-size: 24px;
-    font-family: var(--text-sans);
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.05em;
+    font-family: var(--text-lead);
+    padding: 20px;
 }
 
 h2 a {
-    color: var(--red);
     text-decoration: none;
-}
-
-h2 a:hover {
-    color: var(--dark);
 }
 
 h3, h4, h5, h6 {
@@ -123,8 +114,9 @@ div.view-header {
 
 p.footer {
     font-size: 14px;
-    letter-spacing: 0.15em;
-    font-weight: 300;;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    color: var(--gray);
 }
 
 /* NAV */
@@ -132,13 +124,6 @@ p.footer {
 ul li a {
     /* general nav links */
    text-decoration: none; 
-}
-
-ul.menu li a, nav ul.links li a {
-    color: var(--dark);
-    font-size: 16px;
-    line-height: 150%;
-    display: inline-block;
 }
 
 #main-navigation ul.menu li a {
@@ -235,22 +220,6 @@ div#block-crowcrush-views-block-admin-notes-block-1 {
     border: var(--yellow) 1 solid;
     border-radius: var(--radius-md);
     padding: 10px;
-}
-
-#subfooter {
-    color: var(--light);
-    background-color: var(--dark);
-    padding: 20px 0;
-    text-align: center;
-    margin-bottom: 20px;
-    opacity: 85%;
-}
-
-#subfooter ul.menu li a {
-    color: var(--yellow);
-    padding: 0px;
-    display: block;
-    font-family: var(--text-p);
 }
 
 /* FORM ELEMENTS */
