@@ -2,13 +2,22 @@ uuid: ef3be45a-21a0-4bb8-819c-9dec67adf3af
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.art_page
   module:
     - node
 id: art_page
 label: 'Art Page'
 type: 'canonical_entities:node'
-pattern: '/art/[node:title]'
-selection_criteria: {  }
+pattern: '/[node:field_series]/[node:field_number]/[node:title]'
+selection_criteria:
+  6360c76a-4f30-47c1-a0f7-0133c270f3cc:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      art_page: art_page
 selection_logic: and
 weight: -5
 relationships: {  }
