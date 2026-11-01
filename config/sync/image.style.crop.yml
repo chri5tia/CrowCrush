@@ -5,10 +5,18 @@ dependencies: {  }
 name: crop
 label: Crop
 effects:
-  a8905a73-e47c-4616-a26d-c057f573ef3d:
-    uuid: a8905a73-e47c-4616-a26d-c057f573ef3d
-    id: image_scale_and_crop
-    weight: -10
+  c3555514-bc76-42aa-aa47-42ff9ba5b72c:
+    uuid: c3555514-bc76-42aa-aa47-42ff9ba5b72c
+    id: image_scale
+    weight: 2
+    data:
+      width: 800
+      height: null
+      upscale: false
+  75a2df54-2512-49fc-b1e5-e4a8e60a9a83:
+    uuid: 75a2df54-2512-49fc-b1e5-e4a8e60a9a83
+    id: image_crop
+    weight: 2
     data:
       width: 600
       height: 400
