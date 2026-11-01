@@ -14,7 +14,7 @@ id: comment.comment.comment_body
 field_name: comment_body
 entity_type: comment
 bundle: comment
-label: Comment
+label: 'Leave a comment'
 description: 'What you say here can be displayed publicly. All comments are subject to approval. This field is required to leave a comment.'
 required: true
 translatable: true

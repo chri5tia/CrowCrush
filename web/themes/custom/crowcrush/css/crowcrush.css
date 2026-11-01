@@ -9,6 +9,7 @@
   --paper: #d7d3cc;
   --dark: #333333;
   --light: #fcfcfc;;
+  --subtle: rgba(81, 56, 126, 0.10);
   --radius-md: 15px;
   --radius-lg: 100px;
   --text-p: 'Nunito', sans-serif;
@@ -278,8 +279,9 @@ input[type="submit"], input[type="reset"], input[type="button"] {
 input.form-text, input.form-email, input.form-search, textarea.form-textarea, select {
     color: var(--teal);
     background-color: rgb(from var(--paper) r g b/0.5);
-    border: 1px solid var(--dark);
-    font-size: 18px;
+    border: 1px solid var(--subtle);
+    font-size: large;
+    font-weight: 400;
     padding: 14px;
     width: 100%;
     min-height: 50px;
@@ -287,7 +289,7 @@ input.form-text, input.form-email, input.form-search, textarea.form-textarea, se
 }
 
 input.form-text:focus, input.form-email:focus, input.form-search:focus, textarea.form-textarea:focus, select:focus {
-    background-color: rgb(from var(--paper) r g b/0.25);
+    background-color: rgb(from var(--paper) r g b/0.35);
 }
 
 fieldset {
