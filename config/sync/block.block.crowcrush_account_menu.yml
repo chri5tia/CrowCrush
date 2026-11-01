@@ -12,7 +12,7 @@ _core:
   default_config_hash: Rt7Mt_h_9Sno49WSTqAK14DerNpqYBu14SCs4tAtuwE
 id: crowcrush_account_menu
 theme: crowcrush
-region: sidebar_second
+region: footer
 weight: -4
 provider: null
 plugin: 'system_menu_block:account'
