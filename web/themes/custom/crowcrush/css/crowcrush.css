@@ -127,6 +127,10 @@ p.footer {
     font-weight: 300;
 }
 
+.footer a {
+    color: var(--light);
+}
+
 /* NAV */
 
 ul li a {
