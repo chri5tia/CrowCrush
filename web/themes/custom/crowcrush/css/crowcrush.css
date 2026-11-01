@@ -249,6 +249,14 @@ div#block-crowcrush-views-block-admin-notes-block-1 {
     padding: 0px;
     display: block;
     font-family: var(--text-p);
+    padding: 0 15px;
+    border-radius: var(--radius-md);
+}
+
+#subfooter ul.menu li a:hover {
+    text-decoration: none;
+    color: var(--teal);
+    border-right: 1px var(--light) dotted;
 }
 
 #main-content {
