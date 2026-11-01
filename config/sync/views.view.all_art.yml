@@ -245,30 +245,15 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        sticky:
-          id: sticky
-          table: node_field_data
-          field: sticky
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: sticky
-          plugin_id: standard
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-        field_series_target_id:
-          id: field_series_target_id
-          table: node__field_series
-          field: field_series_target_id
+        field_number_value:
+          id: field_number_value
+          table: node__field_number
+          field: field_number_value
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: standard
-          order: DESC
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
