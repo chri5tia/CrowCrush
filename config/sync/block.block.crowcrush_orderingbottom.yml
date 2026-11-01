@@ -1,0 +1,30 @@
+uuid: baabbdc6-4a33-462e-87f1-b2375c86fcad
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7dc244f8-1517-4844-83f6-2dad137b4439'
+  module:
+    - block_content
+    - system
+  theme:
+    - crowcrush
+id: crowcrush_orderingbottom
+theme: crowcrush
+region: bottom_content
+weight: 0
+provider: null
+plugin: 'block_content:7dc244f8-1517-4844-83f6-2dad137b4439'
+settings:
+  id: 'block_content:7dc244f8-1517-4844-83f6-2dad137b4439'
+  label: Ordering
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'
